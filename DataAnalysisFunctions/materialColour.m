@@ -1,3 +1,11 @@
+%% Material Colour Assignment
+%{
+This function takes in a material name and then assigns it a specific
+colour. The output is the colour which can then be used as an argument when
+plotting.
+Inputs:
+-material: 'MaterialName'
+%}
 function colour = materialColour(material)
 cm = lines(6);
 cmExtended = colorcube(10); %dont use 1,4, or 10

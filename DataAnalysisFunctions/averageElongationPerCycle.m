@@ -3,6 +3,11 @@
 This function allows you to look at the average elongation per cycle for a
 specific material. You can specify the trial range (1:3, etc.) to calculate
 over. To just get a plot of the elongation, always put 'n' for doPlot.
+Inputs:
+-material: 'MaterialName'
+-typeOfTest: 'Force' or 'Position' (only have 'Force' at this time)
+-trialIdx: range of trials (ex: [1:4]) or 'all'
+-doPlot: 'y' or 'n'
 %}
 function [avgElongationPerCycle, stdElongationPerCycle] = averageElongationPerCycle(material, typeOfTest, trialIdx, doPlot)
 switch typeOfTest
