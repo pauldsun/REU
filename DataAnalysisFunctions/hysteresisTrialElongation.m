@@ -10,9 +10,9 @@ cycle of the test. Inputs must be strings (except trialNumber).
 function [unloadedElongation] = hysteresisTrialElongation(material, typeOfTest, trialNumber, doPlot)
 switch typeOfTest
     case 'Force'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
     case 'Position'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/PositionControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
 folderPath = fullfile(baseFolder, sprintf('%s/Trial%d', material, trialNumber));
 %materialFolder = fullfile(baseFolder, material);

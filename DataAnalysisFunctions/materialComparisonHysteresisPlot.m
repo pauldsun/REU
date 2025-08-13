@@ -5,7 +5,6 @@ and plots them all on the same plot. You need to specify which trial of
 each material you want to look at. 
 %}
 function [] = materialComparisonHysteresisPlot(materials, trialNumber)
-%figure()
 %hold on
 %grid on
 
@@ -15,7 +14,7 @@ for i = 1:length(materials)
     material = materials{i};
     colour = materialColour(material);
 
-    baseFolder = '/Users/paulsundstrom/Documents/REU/BreakingLoadData';
+    baseFolder = '/Users/paulsundstrom/REU/BreakingLoadData';
     filePath = fullfile(baseFolder, material, ...
         sprintf('Trial%d', trialNumber), 'DAQ- Crosshead, … - (Timed).csv');
 

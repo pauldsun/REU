@@ -9,9 +9,9 @@ Inputs must be strings.
 function [] = plotEveryHysteresisTrialOfOneMaterial(material, typeOfTest)
 switch typeOfTest
     case 'Force'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
     case 'Position'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/PositionControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
 
 %material = {'material'};

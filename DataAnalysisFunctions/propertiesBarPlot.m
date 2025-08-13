@@ -1,3 +1,17 @@
+%% Bar Plots of Various Properties
+%{
+This function takes in a list of desired materials and property and then
+plots them on a bar plot. The target speed is only for hysteresis
+properties, inputting the speed you wish to look at will retrieve the
+correct trial numbers that correpond.
+Inputs:
+-materials: {'MaterialName1', 'MaterialName2', ...}
+-property: 'stiffness', 'breaking load', 'modulus of elasticity', or
+'elongation'
+-doSave: 'y' or 'n'
+-targetSpeed: 0.1, 0.5, or 1
+%}
+
 function propertiesBarPlot(materials, property, doSave, targetSpeed)
 if nargin < 4
     targetSpeed = 0.1;
@@ -94,9 +108,6 @@ end
     xticklabels(materials)
     ylabel(yaxis)
     ylim([0, ylim(gca)*[0;1]]);
-
-
-
 
 if strcmpi(doSave, 'y')
     folderPath = '/Users/paulsundstrom/Documents/REU/DataAnalysis/Plots';

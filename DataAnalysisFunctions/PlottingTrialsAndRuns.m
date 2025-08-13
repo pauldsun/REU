@@ -1,4 +1,4 @@
-baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
 materialFolder = fullfile(baseFolder, material);
 sampleFolder = fullfile(materialFolder,'UsedSample');
 trialDir = dir(fullfile(materialFolder, 'Trial*'));

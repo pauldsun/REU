@@ -3,9 +3,9 @@
 function [unloadedElongation] = hysteresisRunElongation(material, typeOfTest, runNumber, doPlot)
 switch typeOfTest
     case 'Force'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
     case 'Position'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/PositionControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
 baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
 materialFolder = fullfile(baseFolder, material);

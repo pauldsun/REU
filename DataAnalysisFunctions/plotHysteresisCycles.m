@@ -8,9 +8,9 @@ either on the same plot or on separate figures (true/false).
 function [] = plotHysteresisCycles(material, typeOfTest, trialNumber, runNumber, cycleIndices, plotSeparate)
 switch typeOfTest
     case 'Force'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
     case 'Position'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/PositionControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
 
 if ~isempty(trialNumber)

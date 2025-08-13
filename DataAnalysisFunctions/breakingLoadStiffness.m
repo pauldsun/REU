@@ -6,7 +6,7 @@ stiffness over all trials and also computes the average Young's Modulus.
 %}
 
 function [meanStiffness, stiffnessStd, meanModulus, stdModulus, diameter] = breakingLoadStiffness(material, sampleLength, trialIdx, doPlot)
-baseFolder = '/Users/paulsundstrom/Documents/REU/BreakingLoadData';
+baseFolder = '/Users/paulsundstrom/REU/BreakingLoadData';
 materialFolder = fullfile(baseFolder, material);
 lengthFolder = fullfile(materialFolder, sampleLength);
 trialDir = dir(fullfile(lengthFolder, 'Trial*'));

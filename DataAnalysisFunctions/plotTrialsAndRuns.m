@@ -9,9 +9,9 @@ single trial/run number, an array of trials/runs (1:2 or 2:3), 'all', or
 function [] = plotTrialsAndRuns(material, trials, runs, typeOfTest)
 switch typeOfTest
     case 'Force'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
     case 'Position'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/PositionControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
 materialFolder = fullfile(baseFolder, material);
 sampleFolder = fullfile(materialFolder,'UsedSample');

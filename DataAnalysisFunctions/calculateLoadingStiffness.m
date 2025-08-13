@@ -7,9 +7,9 @@ for the one you are not looking at.
 function [stiffness] = calculateLoadingStiffness(material, typeOfTest, trialNumber, runNumber, doPlot, averageFirstCycle)
 switch typeOfTest
     case 'Force'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
     case 'Position'
-        baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/PositionControl';
+        baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
 if ~isempty(trialNumber)
     folderPath = fullfile(baseFolder, sprintf('%s/Trial%d', material, trialNumber));
