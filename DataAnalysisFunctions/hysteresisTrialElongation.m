@@ -1,10 +1,7 @@
-%% Hysteresis Elongation **USE hysteresisElongation FUNCTION INSTEAD**
+%% Used for (5Cycles) Data only
 %{
-This function looks at the elongation of a single trial of a specific material.
-You can specify the type of hysteresis data (force 'or position), which
-trial you would like to see, and if you would like the data plotted. The
-output of this function is a matrix of the elongation corresponding to each
-cycle of the test. Inputs must be strings (except trialNumber).
+This function takes a run number in and calculates the elongation with the
+option of plotting.
 %}
 
 function [unloadedElongation] = hysteresisTrialElongation(material, typeOfTest, trialNumber, doPlot)

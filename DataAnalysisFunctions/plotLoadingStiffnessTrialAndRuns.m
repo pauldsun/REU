@@ -1,4 +1,14 @@
-% Plots stiffness for 1 trial and multiple runs with different markers/styles
+%% Plot Loading Stiffness for One Trial and Various Runs
+%{
+This function takes one trial input and one or more run numbers and plots
+their loading stiffness. The point of one trial and multiple runs is due to
+the time waiting between trials and runs.
+Inputs:
+-material: 'MaterialName'
+-typeOfTest: 'Force' or 'Position'
+-trialNumber: n for 1<= n <= 3 (where n is an integer)
+-runNumbers: n and n:m (where n & m are integers)
+%}
 function plotLoadingStiffnessTrialAndRuns(material, typeOfTest, trialNumber, runNumbers)
 
 hold on

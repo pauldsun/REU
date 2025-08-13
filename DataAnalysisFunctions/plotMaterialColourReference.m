@@ -1,6 +1,11 @@
-function plotMaterialColourReference()
-materials = {'DuraBraid', 'Stealth', 'Dyneema', 'Spectra', 'Kevlar', ...
-    'SteelCableSD', 'SteelCableLD'};
+%% Plotting a Colour Reference for the Materials
+%{
+This function plots square colour references for each material so you can
+visualize which colour goes with which material.
+Input:
+-materials: {'MaterialName1', 'MaterialName2', ...}
+%}
+function plotMaterialColourReference(materials)
 
 numMaterials = length(materials);
 hold on
@@ -16,6 +21,10 @@ for i = 1:numMaterials
     rectangle('Position', [x, y, width, height], ...
               'FaceColor', color, ...
               'EdgeColor', 'k')
+    text(x + width/2, y + height + 0.1, materials{i}, ...
+         'HorizontalAlignment', 'center', ...
+         'VerticalAlignment', 'bottom', ...
+         'FontSize', 10)
 end
 
 xlim([0, numMaterials + 1])

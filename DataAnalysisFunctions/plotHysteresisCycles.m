@@ -1,8 +1,15 @@
 %% Plot Specific Cycles from a Trial or Run
 %{
 This function allows you to plot specific loading cycles from a given
-trial or run of a material. You can specify the cycle indices to plot,
-either on the same plot or on separate figures (true/false).
+trial or run of a material. Can only look at one trial or run at a time.
+Inputs:
+-material: 'MaterialName'
+-typeOfTest: 'Force' or 'Position'
+-trialNumber: n (where n is an integer)
+or 
+runNumber: n
+-cycleIndices: n:m (where n & m are integers)
+-plotSeparate: 'true' or 'false' (does nothing right now)
 %}
 
 function [] = plotHysteresisCycles(material, typeOfTest, trialNumber, runNumber, cycleIndices, plotSeparate)

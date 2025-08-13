@@ -1,3 +1,5 @@
+%% OUTDATED - USE propertiesBarPlot INSTEAD
+
 function barPlotFirstCycleElongation(materials, typeOfTest)
 
 numMaterials = length(materials);

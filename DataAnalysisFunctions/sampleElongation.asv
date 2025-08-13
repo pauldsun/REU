@@ -1,10 +1,6 @@
 %% Used only for the (5Cycle) Data
 %{
-This function plots the elongation per cycle for one trial and all runs
-which is then shows the elongation over all 20 cycles and 4 tests.
-Inputs:
--material: 'MaterialName'
--typeOfTest: 'Force' or 'Position'
+This function pl
 %}
 
 function [] = sampleElongation(material, typeOfTest)

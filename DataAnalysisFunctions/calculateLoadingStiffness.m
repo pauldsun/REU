@@ -3,6 +3,14 @@
 This function calculates the stiffness of each cycle of one trial/run of
 hysteresis. You input the desired trial or run number (not both), and [] 
 for the one you are not looking at.
+Inputs:
+-material: 'MaterialName'
+-typeOfTest: 'Force' or 'Position'
+-trialNumber: n (where n is an integer)
+OR
+runNumber: n (where n is an integer
+-doPlot: 'y' or 'n'
+-averageFirstCycle: 'y' or 'n'
 %}
 function [stiffness] = calculateLoadingStiffness(material, typeOfTest, trialNumber, runNumber, doPlot, averageFirstCycle)
 switch typeOfTest

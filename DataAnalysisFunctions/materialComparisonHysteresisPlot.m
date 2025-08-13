@@ -1,8 +1,11 @@
-%% Plotting Different Materials on the Same Plot
+%% Visual Comparison of Different Materials Hysteresis
 %{
 This function inputs a cell of the different materials you wish to look at
 and plots them all on the same plot. You need to specify which trial of
 each material you want to look at. 
+Inputs:
+-materials: {'MaterialName1', 'MaterialName2', ...}
+-trialNumber: n (where n is an integer)
 %}
 function [] = materialComparisonHysteresisPlot(materials, trialNumber)
 %hold on

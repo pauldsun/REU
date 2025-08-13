@@ -1,4 +1,8 @@
-%% USE hysteresisElongation FUNCTION INSTEAD
+%% Used for (5Cycles) Data only
+%{
+This function takes a run number in and calculates the elongation with the
+option of plotting.
+%}
 
 function [unloadedElongation] = hysteresisRunElongation(material, typeOfTest, runNumber, doPlot)
 switch typeOfTest
@@ -7,7 +11,7 @@ switch typeOfTest
     case 'Position'
         baseFolder = '/Users/paulsundstrom/REU/HysteresisData/PositionControl';
 end
-baseFolder = '/Users/paulsundstrom/Documents/REU/HysteresisData/ForceControl';
+baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';
 materialFolder = fullfile(baseFolder, material);
 sampleFolder = fullfile(materialFolder,'UsedSample');
 folderPath = fullfile(sampleFolder, sprintf('Run%d', runNumber));

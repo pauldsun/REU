@@ -1,10 +1,11 @@
-%% Plotting All Trails of Hysteresis Tests of a Specific Material
+%% Plotting All Trials of Hysteresis Tests of a Specific Material
 %{
 This function currently plots each trial of a specified material on the same
 plot to compare all three trails. Can change the materials or number of
-trails if more data is collected. The input is the material you wish to
-look at the type of hysteresis test you wish to view (force or position).
-Inputs must be strings.
+trails if more data is collected. 
+Inputs:
+-material: 'MaterialName'
+-typeOfTest: 'Force' or 'Position'
 %}
 function [] = plotEveryHysteresisTrialOfOneMaterial(material, typeOfTest)
 switch typeOfTest

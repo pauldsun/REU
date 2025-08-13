@@ -4,6 +4,11 @@ This function inputs the desired material and allows you to choose which
 combination of trials and runs you would like to view. You may input a
 single trial/run number, an array of trials/runs (1:2 or 2:3), 'all', or
 'none' to view a plot of that combination.
+Inputs:
+-material: 'MaterialName'
+-trails: n, n:m, or 'all' (where n & m are integers)
+-runs: n, n:m, or 'all' (where n & m are integers)
+-typeOfTest: 'Force' or 'Position'
 %}
 
 function [] = plotTrialsAndRuns(material, trials, runs, typeOfTest)

@@ -2,10 +2,15 @@
 %{
 This function allows you to call any number of trails/runs and collects
 their elongations in their repsective cell such that each row of the cell
-correspods to a trial number/run number. The inputs are the material name,
+corresponds to a trial number/run number. The inputs are the material name,
 the trial/run number (you can do multiple by 1:3), and 'Position' or
-'Force' for the type of test. If you do not want either trails/runs you
-input [].
+'Force' for the type of test. If you do not want any trails/runs you
+input [] for that respective input.
+Inputs:
+-material: 'MaterialName'
+-trials: n, n:m (where n and m are integers)
+-typeOfTest: 'Force' or 'Position' (only have 'Force' right now)
+-doPlot: 'y' or 'n'
 %}
 
 function [trialElongations, runElongations] = hysteresisElongation(material, trials, runs, typeOfTest, doPlot)

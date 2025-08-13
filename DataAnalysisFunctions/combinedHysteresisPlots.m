@@ -1,4 +1,4 @@
-%% Use plotTrialsAndRuns Instead
+%% OUTDATED USE plotTrialsAndRuns INSTEAD
 
 function [] = combinedHysteresisPlots(material)
 baseFolder = '/Users/paulsundstrom/REU/HysteresisData/ForceControl';

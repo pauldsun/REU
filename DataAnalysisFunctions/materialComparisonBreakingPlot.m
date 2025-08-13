@@ -1,3 +1,12 @@
+%% Visual Comparison of Different Materials Breaking Load
+%{
+This function plots one breakin load trial of the desired materials on the
+same plot to visualize the difference in raw data between each material.
+Inputs:
+-materials: {'MaterialName1', 'MaterialName2', ...}
+-sampleLength: '100mm' or '200mm'
+-trialNumber: n (where n is an integer)
+%}
 function [] = materialComparisonBreakingPlot(materials, sampleLength, trialNumber)
 
 legendEntries = cell(1, length(materials));

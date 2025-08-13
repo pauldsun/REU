@@ -1,8 +1,19 @@
 %% Stiffness and Young's Modulus Calculation for Breaking Load Data
 %{
-This function looks as all trails of a specified material and sample length
+This function looks as all trials of a specified material and sample length
 and calculates the stiffness of the elastic region. It then averages this
 stiffness over all trials and also computes the average Young's Modulus.
+Inputs:
+-material: 'MaterialName'
+-sampleLength: '100mm' or '200mm'
+-trailIdx: n, n:m, or 'all' (where n & m are integers)
+-doPlot: 'y' or 'n'
+Outputs:
+-meanStiffness: avg. stiffness across trialIdx
+-stiffnessStd: std of meanStiffness
+-meanModulus: avg. modulus of elasticity across trialIdx
+-stdModulus: std of meanModulus
+-diameter: the diameter of the inputted material
 %}
 
 function [meanStiffness, stiffnessStd, meanModulus, stdModulus, diameter] = breakingLoadStiffness(material, sampleLength, trialIdx, doPlot)

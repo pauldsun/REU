@@ -1,3 +1,12 @@
+%% Create a Table of Set Properties for Any Desired Materials
+%{
+This function takes deisred materials, calculates all of the
+properties I am interested in, and compiles the values in a table that can
+be outputted as a csv.
+Input:
+-materials: {'MaterialName1', 'MaterialName2', ...}
+-doSave: 'y' or 'n' (will save as a csv to Results folder)
+%}
 function [properties] = createPropertiesTable(materials, doSave)
 
 categories = {'Material', 'Diameter (mm)', 'Length (mm)','Stiffness (N/mm)', ...
@@ -23,6 +32,7 @@ for i = 1:length(materials)
     end
 end
 if strcmpi(doSave, 'y')
+    fileName = fullfile()
 writecell(properties, '8_5Updated')
 end
 end

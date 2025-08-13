@@ -1,3 +1,16 @@
+%% Plotting Elongation as a Function of Number of Cycles for a Given Speed
+%{
+This function takes various materials and plots their elongation per cycle
+at a specified loading speed. You can only look at one input speed.
+Inputs:
+-materials: {'MaterialName1', 'MaterialName2', ...}
+-typeOfTest: 'Force' or 'Position'
+-trialGroups: cell array of trialIdx vectors, e.g., {1:3, 4:6, 7:9}
+-skipFirstCycle: 'y' or 'n'
+-speeds: vector of speeds like [0.1, 0.5, 1.0]
+-targetSpeed: 0.1, 0.5, or 1 (one of the values in speeds)
+-doPlot: 'y' or 'n'
+%}
 function plotAllMaterialElongationPerCycleBySpeed(materials, typeOfTest, trialGroups, speeds, targetSpeed, doPlot)
 
 speedIdx = find(abs(speeds - targetSpeed) < 1e-6);

@@ -1,11 +1,19 @@
+%% Used only for (5Cycles) Data
+%{
+This function plots the elongation per cycle for one trial and all runs
+which is then shows the stiffness over all 20 cycles and 4 tests.
+Inputs:
+-material: 'MaterialName'
+-typeOfTest: 'Force' or 'Position'
+%}
 function [] = sampleStiffness(material, typeOfTest)
 trialNumber = 1;
 colour = materialColour(material);
-trialStiffness = calculateLoadingStiffness(material, typeOfTest, trialNumber, [], 'n');
+trialStiffness = calculateLoadingStiffness(material, typeOfTest, trialNumber, [], 'n', 'y');
 
 totalRunStiffness = [];
 for runNumber = 1:3
-    runStiffness = calculateLoadingStiffness(material, typeOfTest, [], runNumber, 'n');
+    runStiffness = calculateLoadingStiffness(material, typeOfTest, [], runNumber, 'n', 'y');
     totalRunStiffness = [totalRunStiffness, runStiffness];
 end
 
