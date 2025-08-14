@@ -35,5 +35,5 @@ for i = 1:length(materials)
     ylabel(sprintf('Normalized Stiffness at Cycle %d', cycleNumber)) %$$\left(1 = Average Lowest Speed Stiffness\right)$$ inlcude in figure caption
     xlabel('Speed $$\left(mm/s\right)$$')
     legend(Location='northwest')
-    ylim([.95 1.14])
+    %ylim([.94 1.16])
 end

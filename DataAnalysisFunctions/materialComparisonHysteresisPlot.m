@@ -28,5 +28,5 @@ end
 
 xlabel('Displacement (mm)')
 ylabel('Force (N)')
-legend(legendEntries, 'Location', 'northeast')
+legend(legendEntries, 'Location', 'northeast', 'NumColumns',ceil(length(materials)/2))
 end

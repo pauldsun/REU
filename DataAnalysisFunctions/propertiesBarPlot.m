@@ -111,7 +111,7 @@ end
 
 if strcmpi(doSave, 'y')
     folderPath = '/Users/paulsundstrom/Documents/REU/DataAnalysis/Plots';
-    saveas(gcf, fullfile(folderPath, sprintf('%sBarPlot.png',property)));
+    saveas(gcf, fullfile(folderPath, sprintf('%sBarPlot.svg',property)));
 end
 
 end
